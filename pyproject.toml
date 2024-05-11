@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "My-Anime-Sensei"
+version = "0.1.0"
+description = "Criando um chatbot usando API do Gemini + Python para recomendação de animes com base na sua necessidade"
+authors = ["Mauricio Benjamin <mauriciobenjamin700@gmail.com>", "Jhonatan Ramos <jhow1551@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+google-generativeai = "^0.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
