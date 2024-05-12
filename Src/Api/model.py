@@ -22,6 +22,17 @@ def use_model(prompt: str, model: genai.GenerativeModel) -> dict:
     """
     
     prompt = "Recomende animes, os separando entre seus respectivos gêneros (ação, ficção, comédia, terror, etc) sobre: " + prompt
+    return  model.generate_content(prompt).text.replace('*','')
+                
+                
+def use_model_dict(prompt: str, model: genai.GenerativeModel) -> dict:
+    """
+    Gera um dicionário, onde cada chave é um gênero de anime, e dentro das chaves contem os animes em formato de lista de string referentes ao gênero.
+    
+    Dicionario[Gênero] == ["Anime1", "Anime2", "Anime3"]
+    """
+    
+    prompt = "Recomende animes, os separando entre seus respectivos gêneros (ação, ficção, comédia, terror, etc) sobre: " + prompt
     data =  model.generate_content(prompt).text.replace('*','').splitlines()
     #print(data)
     #print("\n\n\n")
@@ -52,7 +63,6 @@ def use_model(prompt: str, model: genai.GenerativeModel) -> dict:
                 del item
                 
     return dic
-                
     
     #pattern = r"(?:^|\n{2})(.*?)(?:\n{2}|\n|$)" # Expresão Regular usada para filtrar as seções dos animes recomendados
     
