@@ -7,6 +7,7 @@ Este repositório aborda a criação de um chatbot voltado para a recomendação
 - De um Fork no Projeto
 - Tenha o [python 3.12] instalado na sua maquina [Clique aqui para Baixar o Python](https://www.python.org/downloads/)
 - Instale as Dependencias usando `poetry install` no terminal, dentro da pasta do projeto. [clique aqui caso não tenha o poetry instalado](https://github.com/mauriciobenjamin700/Poetry-Learning)
+- Coloque a `API-KEY` no repositório [igual neste guia](Docs/API-Guide.md)
 - Execute o arquivo [index.py](index.py) e aprecie nossa aplicação
 
 ## Devs
