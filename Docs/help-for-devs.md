@@ -4,7 +4,7 @@
 
 Todo o projeto foi desenvolvido usando linguagem python, logo você precisa ter o python instalado em sua maquina.
 
-[Clique aqui para Baixar o Python se você usa Windows](https://www.python.org/downloads/)
+[Clique aqui para Baixar o Python](https://www.python.org/downloads/)
 
 ## Gerênciando Pacotes
 
@@ -15,3 +15,7 @@ Instale todas as dependencias necessárias usando `poetry install` no terminal, 
 ## Git e Github
 
 Se você deseja contribuir e não tem conhecimento sobre git e github, te recomendo nosso material de apoio [clicando aqui](https://github.com/mauriciobenjamin700/Git-Learning)
+
+## Configurando API
+
+Acesse o tutorial de configuração da API clicando [aqui](API-Guide.md)
