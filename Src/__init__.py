@@ -5,3 +5,4 @@ sys.path.insert(0, dirname(abspath(__file__)))
 
 from Api import *
 
+from Views import *
